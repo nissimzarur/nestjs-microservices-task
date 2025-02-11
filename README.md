@@ -112,4 +112,3 @@ You will receive a response with the remaining time:
 - **POST** `/timers` - Send a message with a delay.
 - **GET** `/timers/{id}` - Check the time left for a delayed message.
 
-Thank you.
