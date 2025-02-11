@@ -15,11 +15,13 @@ export class SuperheroController {
 
   @Post()
   create(@Body() data: CreateSuperheroDto) {
+    console.log("Create Superhero")
     return this.superheroService.create(data);
   }
 
   @Get('/:id')
   getById(@Param('id', new ParseUUIDPipe()) id: string) {
+    console.log("Fetch Superhero")
     return this.superheroService.getById(id);
   }
 }

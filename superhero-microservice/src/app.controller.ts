@@ -9,11 +9,13 @@ export class AppController {
 
   @MessagePattern({ cmd: 'superhero.create' })
   async createSuperhero(data: CreateSuperheroDto) {
+    console.log("createSuperhero")
     return this.appService.createSuperhero(data);
   }
 
   @MessagePattern({ cmd: 'superhero.getById' })
   async getSuperheroById(id: string) {
+    console.log('getSuperheroById')
     return this.appService.getSuperheroById(id);
   }
 }
