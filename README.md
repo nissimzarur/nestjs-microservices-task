@@ -3,9 +3,23 @@
 
 This project provides a simple API to manage superheroes and schedule messages with a delay.
 
+## Tech Stack
+This project utilizes the following technologies:
+
+- NestJS: A progressive Node.js framework for building efficient, reliable, and scalable server-side applications. 1 It provides a structured approach to development, making the codebase maintainable and testable.
+
+- TypeORM: An ORM (Object-Relational Mapper) for TypeScript. It allows developers to interact with the database using object-oriented paradigms, simplifying database operations and providing type safety.
+
+- RabbitMQ: A message broker that implements the Advanced Message Queuing Protocol (AMQP). It's used for asynchronous communication, enabling the application to handle delayed messages efficiently. When a timer is created, the message details are sent to RabbitMQ, which then delivers the message to the application after the specified delay.
+
+- PostgreSQL: A powerful, open-source relational database management system. It's used for persistent storage of superhero data and timer information.
+
+- Docker: A platform for building, shipping, and running applications in containers. Docker ensures that the application runs consistently across different environments.
+
 ## Requirements
 
 - Docker
+- NestJS
 - Postman
 
 ## Setup Instructions
